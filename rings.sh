@@ -51,7 +51,7 @@ text () {
 	cmd="$cmd -font helvetica -fill white -pointsize 14 -draw \"text $p0,$p1 '$progress / $goal'\""
 }
 
-date=`date -v -1d +"%d %b"`
+date=`date -d yesterday +"%d %b"`
 cmd="$cmd -font helvetica -fill white -pointsize 14 -draw \"text 10,25 'Dave Health - $date'\""
 
 text 0
